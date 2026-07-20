@@ -3,11 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AlphaKleen - Reliable Cleaning Staff You Can Trust</title>
+<title>AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka</title>
+<meta name="description" content="AlphaKleen offers reliable, hotel-standard cleaning services in Colombo and surrounding areas. Standard cleaning, deep cleaning, and move-in/move-out cleaning for homes and offices. Trained, trusted staff. Book cleaning services near you today.">
+<meta name="keywords" content="cleaning services Colombo, cleaning services near me, house cleaning Colombo, deep cleaning service, home cleaning service, office cleaning Colombo, move out cleaning Sri Lanka">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://alphakleen.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka">
+<meta property="og:description" content="Reliable, hotel-standard cleaning services in Colombo and surrounding areas. Standard cleaning, deep cleaning, and move-in/move-out cleaning for homes and offices.">
+<meta property="og:url" content="https://alphakleen.github.io/">
+<meta property="og:image" content="https://alphakleen.github.io/logo.png">
+<meta property="og:locale" content="en_LK">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka">
+<meta name="twitter:description" content="Reliable, hotel-standard cleaning services in Colombo and surrounding areas.">
+<meta name="twitter:image" content="https://alphakleen.github.io/logo.png">
+
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<!-- Local Business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HouseCleaningService",
+  "name": "AlphaKleen",
+  "image": "https://alphakleen.github.io/logo.png",
+  "url": "https://alphakleen.github.io/",
+  "telephone": "+94707020204",
+  "email": "alphakleen.info@gmail.com",
+  "areaServed": {
+    "@type": "City",
+    "name": "Colombo"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Colombo",
+    "addressCountry": "LK"
+  },
+  "sameAs": [
+    "https://www.instagram.com/alphakleen_/",
+    "https://web.facebook.com/profile.php?id=61578281924478"
+  ],
+  "priceRange": "$$"
+}
+</script>
+
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to provide cleaning supplies or equipment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, our team brings all necessary cleaning supplies and equipment. If you prefer us to use specific products you already own, just mention it in the booking notes." }
+    },
+    {
+      "@type": "Question",
+      "name": "How is your staff trained and supervised?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every team member is carefully selected and trained to hotel housekeeping standards, and works under close supervision on every visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you currently service?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We currently cover Colombo and the surrounding areas. If you're just outside this range, WhatsApp us and we'll confirm whether we can accommodate you." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I reschedule or cancel a booking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, just reach out via WhatsApp or call as early as possible and we'll help you find a new time that works." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I'm not happy with the clean?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Let us know within 24 hours and we'll send the team back to make it right, at no extra charge, that's our satisfaction guarantee." }
+    }
+  ]
+}
+</script>
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -225,7 +307,8 @@
     nav ul { display: none; }
     .hero { grid-template-columns: 1fr; }
     .hero-left { padding: 5.5rem 1.5rem 3rem; }
-    .hero-right { height: 320px; }
+    .hero-right { height: auto; padding: 2.5rem 1.5rem; }
+    .hero-visual { position: static; padding: 0; gap: 1rem; }
     section { padding: 4rem 1.5rem; }
     .why-grid, .services-header, .contact-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
@@ -255,7 +338,6 @@
   }
   @media (max-width: 560px) {
     .services-grid, .steps { grid-template-columns: 1fr; }
-    .hero-right { height: 260px; }
     h1 { font-size: 2.2rem; }
     .stats-grid { grid-template-columns: 1fr 1fr; }
   }
@@ -274,7 +356,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo"><img src="logo.png" alt="" style="height:32px;width:auto;"> Alpha<span style="color:var(--gold-deep);">Kleen</span></div>
+  <div class="nav-logo"><img src="logo.png" alt="AlphaKleen cleaning services logo" style="height:32px;width:auto;"> Alpha<span style="color:var(--gold-deep);">Kleen</span></div>
   <ul>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#services">Services</a></li>
@@ -288,7 +370,7 @@
 <section class="hero">
   <div class="hero-left">
     <div class="hero-eyebrow">✦ Sri Lanka's Trusted Cleaning Service</div>
-    <h1>Reliable Cleaning Staff <span class="gold"><em>You Can Trust.</em></span></h1>
+    <h1>Reliable Cleaning Services in Colombo <span class="gold"><em>You Can Trust.</em></span></h1>
     <p class="hero-sub">Trained, trusted, and dependable cleaning staff to keep your home or apartment spotless - every single visit.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-gold">Book a Clean →</a>
@@ -365,7 +447,7 @@
       <div class="section-label">Our Services</div>
       <h2>Residential cleaning <em>done right.</em></h2>
     </div>
-    <p class="services-desc">Whether it's a routine refresh or a thorough deep clean, AlphaKleen adapts to your home - with the same high standards every time.</p>
+    <p class="services-desc">Looking for cleaning services near you? Whether it's a routine refresh or a thorough deep clean, AlphaKleen adapts to your home in Colombo - with the same high standards every time.</p>
   </div>
   <div class="services-grid">
     <div class="service-card">
@@ -623,7 +705,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="" style="height:26px;width:auto;"> Alpha<span style="color:var(--gold);">Kleen</span></div>
+  <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="AlphaKleen cleaning services logo" style="height:26px;width:auto;"> Alpha<span style="color:var(--gold);">Kleen</span></div>
   <div>© 2026 AlphaKleen. Sri Lanka's Trusted Cleaning Service.</div>
   <div>
     <a href="mailto:alphakleen.info@gmail.com">alphakleen.info@gmail.com</a> &nbsp;|&nbsp;
