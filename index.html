@@ -12,16 +12,16 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --navy: #0d1f4e;
-    --navy-deep: #091540;
-    --navy-mid: #1a2f66;
-    --gold: #f5c518;
-    --gold-deep: #c9a100;
-    --gold-light: #fff8dc;
+    --navy: #0e5259;
+    --navy-deep: #082f33;
+    --navy-mid: #14707a;
+    --gold: #f0b429;
+    --gold-deep: #c68e17;
+    --gold-light: #fdf3dc;
     --white: #ffffff;
-    --off-white: #f8f9fc;
-    --muted: #6b7a99;
-    --border: #e4e8f0;
+    --off-white: #f6faf9;
+    --muted: #5c7370;
+    --border: #dbe8e6;
   }
 
   html { scroll-behavior: smooth; }
@@ -34,14 +34,14 @@
     padding: 1rem 5rem;
     background: rgba(255,255,255,0.95); backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
-    box-shadow: 0 1px 12px rgba(13,31,78,0.06);
+    box-shadow: 0 1px 12px rgba(14,82,89,0.06);
   }
   .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--navy); display: flex; align-items: center; gap: 0.3rem; }
   .nav-logo .star { color: var(--gold); font-size: 1rem; }
   nav ul { list-style: none; display: flex; gap: 2.5rem; align-items: center; }
   nav ul a { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; }
   nav ul a:hover { color: var(--navy); }
-  .nav-cta { background: var(--gold) !important; color: var(--navy) !important; padding: 0.6rem 1.5rem; border-radius: 2rem; font-weight: 600 !important; box-shadow: 0 4px 12px rgba(245,197,24,0.3); transition: background 0.2s !important; }
+  .nav-cta { background: var(--gold) !important; color: var(--navy) !important; padding: 0.6rem 1.5rem; border-radius: 2rem; font-weight: 600 !important; box-shadow: 0 4px 12px rgba(240,180,41,0.3); transition: background 0.2s !important; }
   .nav-cta:hover { background: var(--gold-deep) !important; }
 
   /* HERO */
@@ -49,7 +49,7 @@
   .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 6rem 3rem 6rem 5rem; position: relative; z-index: 2; }
   .hero-eyebrow {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: rgba(245,197,24,0.12); border: 1px solid rgba(245,197,24,0.25);
+    background: rgba(240,180,41,0.12); border: 1px solid rgba(240,180,41,0.25);
     color: var(--gold); padding: 0.4rem 1rem; border-radius: 2rem;
     font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
     margin-bottom: 1.8rem; width: fit-content;
@@ -58,7 +58,7 @@
   h1 .gold { color: var(--gold); font-style: italic; }
   .hero-sub { font-size: 1rem; line-height: 1.75; color: rgba(255,255,255,0.6); max-width: 420px; margin-bottom: 2.5rem; animation: fadeUp 0.8s 0.15s ease both; }
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.8s 0.3s ease both; margin-bottom: 3rem; }
-  .btn-gold { background: var(--gold); color: var(--navy); padding: 0.9rem 2rem; border-radius: 3rem; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.2s; display: inline-block; box-shadow: 0 6px 20px rgba(245,197,24,0.3); }
+  .btn-gold { background: var(--gold); color: var(--navy); padding: 0.9rem 2rem; border-radius: 3rem; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.2s; display: inline-block; box-shadow: 0 6px 20px rgba(240,180,41,0.3); }
   .btn-gold:hover { background: var(--gold-deep); transform: translateY(-2px); }
   .btn-outline { border: 1.5px solid rgba(255,255,255,0.25); color: var(--white); padding: 0.9rem 2rem; border-radius: 3rem; font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: border-color 0.2s, color 0.2s, transform 0.2s; display: inline-block; }
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
@@ -69,7 +69,7 @@
 
   /* Hero Right */
   .hero-right { background: var(--navy-mid); position: relative; overflow: hidden; }
-  .hero-right::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 20%, rgba(245,197,24,0.07) 0%, transparent 60%); }
+  .hero-right::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 20%, rgba(240,180,41,0.07) 0%, transparent 60%); }
   .hero-visual { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem; padding: 3rem; }
   .hero-main-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1.5rem; padding: 2rem; width: 100%; max-width: 300px; position: relative; }
   .hero-main-card-badge { position: absolute; top: -10px; right: 16px; background: var(--gold); color: var(--navy); font-size: 0.68rem; font-weight: 700; padding: 0.3rem 0.8rem; border-radius: 2rem; text-transform: uppercase; letter-spacing: 0.04em; }
@@ -97,10 +97,24 @@
   .why-intro { font-size: 0.95rem; color: rgba(255,255,255,0.45); line-height: 1.75; max-width: 500px; margin-bottom: 3rem; }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
   .why-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 1.2rem; padding: 2rem; transition: background 0.2s, border-color 0.2s; }
-  .why-card:hover { background: rgba(245,197,24,0.05); border-color: rgba(245,197,24,0.18); }
-  .why-icon { width: 44px; height: 44px; border-radius: 0.75rem; background: rgba(245,197,24,0.12); border: 1px solid rgba(245,197,24,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1.2rem; }
+  .why-card:hover { background: rgba(240,180,41,0.05); border-color: rgba(240,180,41,0.18); }
+  .why-icon { width: 44px; height: 44px; border-radius: 0.75rem; background: rgba(240,180,41,0.12); border: 1px solid rgba(240,180,41,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1.2rem; }
   .why-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
   .why-card p { font-size: 0.83rem; color: rgba(255,255,255,0.4); line-height: 1.65; }
+
+  /* LEADERSHIP */
+  .leadership { background: var(--white); padding: 4.5rem 5rem; }
+  .leadership-card {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-radius: 1.5rem; padding: 3rem; display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;
+  }
+  .leadership-badge {
+    width: 90px; height: 90px; border-radius: 50%; background: rgba(240,180,41,0.15); border: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: center; font-size: 2.2rem; flex-shrink: 0;
+  }
+  .leadership-text .section-label { color: var(--gold); }
+  .leadership-text h3 { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--white); margin-bottom: 0.6rem; line-height: 1.3; }
+  .leadership-text p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 620px; }
 
   /* SERVICES */
   .services { background: var(--off-white); }
@@ -108,8 +122,8 @@
   .services-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.75; }
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
   .service-card { background: var(--white); border-radius: 1.2rem; padding: 2rem; border: 1px solid var(--border); transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s; }
-  .service-card:hover { box-shadow: 0 16px 48px rgba(13,31,78,0.08); transform: translateY(-4px); border-color: rgba(245,197,24,0.35); }
-  .service-icon { width: 48px; height: 48px; background: var(--gold-light); border: 1px solid rgba(245,197,24,0.2); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; }
+  .service-card:hover { box-shadow: 0 16px 48px rgba(14,82,89,0.08); transform: translateY(-4px); border-color: rgba(240,180,41,0.35); }
+  .service-icon { width: 48px; height: 48px; background: var(--gold-light); border: 1px solid rgba(240,180,41,0.2); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; }
   .service-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--navy); }
   .service-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
   .service-price { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--gold-deep); font-weight: 600; }
@@ -119,17 +133,17 @@
   .steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 0.8rem; margin-top: 3rem; }
   .step { position: relative; text-align: center; padding: 1.8rem 1rem; }
   .step:not(:last-child)::after { content: '→'; position: absolute; right: -0.4rem; top: 2rem; color: var(--gold); font-size: 1.2rem; }
-  .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--gold); font-family: 'DM Serif Display', serif; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 4px 16px rgba(13,31,78,0.2); }
+  .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--gold); font-family: 'DM Serif Display', serif; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 4px 16px rgba(14,82,89,0.2); }
   .step h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--navy); }
   .step p { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
 
   /* PROMISE */
   .promise { background: var(--gold); padding: 5rem; text-align: center; }
-  .promise .section-label { color: rgba(13,31,78,0.55); }
+  .promise .section-label { color: rgba(14,82,89,0.55); }
   .promise h2 { color: var(--navy); margin-bottom: 1rem; }
-  .promise p { font-size: 1rem; color: rgba(13,31,78,0.65); max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
+  .promise p { font-size: 1rem; color: rgba(14,82,89,0.65); max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; }
   .promise-badges { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
-  .badge { background: rgba(13,31,78,0.1); border: 1px solid rgba(13,31,78,0.12); color: var(--navy); padding: 0.5rem 1.2rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 600; }
+  .badge { background: rgba(14,82,89,0.1); border: 1px solid rgba(14,82,89,0.12); color: var(--navy); padding: 0.5rem 1.2rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 600; }
 
   /* CONTACT */
   .contact { background: var(--off-white); }
@@ -143,7 +157,7 @@
   .contact-item-text a { color: var(--navy); text-decoration: none; font-weight: 500; }
   .contact-item-text a:hover { color: var(--gold-deep); }
 
-  .contact-form { background: var(--white); border-radius: 1.5rem; padding: 2.5rem; border: 1px solid var(--border); box-shadow: 0 8px 40px rgba(13,31,78,0.06); }
+  .contact-form { background: var(--white); border-radius: 1.5rem; padding: 2.5rem; border: 1px solid var(--border); box-shadow: 0 8px 40px rgba(14,82,89,0.06); }
   .contact-form h3 { font-family: 'DM Serif Display', serif; font-size: 1.35rem; margin-bottom: 1.8rem; color: var(--navy); }
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
   .field { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
@@ -154,7 +168,39 @@
   .form-submit { width: 100%; background: var(--navy); color: var(--gold); border: none; border-radius: 0.6rem; padding: 1rem; font-size: 0.9rem; font-weight: 600; font-family: inherit; cursor: pointer; transition: background 0.2s, transform 0.15s; margin-top: 0.5rem; letter-spacing: 0.02em; }
   .form-submit:hover { background: var(--navy-deep); transform: translateY(-1px); }
 
-  /* WHATSAPP FLOAT */
+  /* STATS */
+  .stats { background: var(--off-white); padding: 3.5rem 5rem; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; text-align: center; }
+  .stat-item { padding: 1rem; }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--navy); margin-bottom: 0.3rem; }
+  .stat-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--white); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin-top: 3rem; }
+  .testimonial-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 1.2rem; padding: 2rem; }
+  .testimonial-stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+  .testimonial-quote { font-size: 0.9rem; color: var(--navy); line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.7rem; }
+  .testimonial-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; flex-shrink: 0; }
+  .testimonial-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+  .testimonial-loc { font-size: 0.75rem; color: var(--muted); }
+
+  /* FAQ */
+  .faq { background: var(--off-white); }
+  .faq-list { max-width: 780px; margin-top: 2.5rem; }
+  .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: 1rem; margin-bottom: 0.8rem; overflow: hidden; }
+  .faq-question { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.2rem 1.5rem; cursor: pointer; font-size: 0.92rem; font-weight: 600; color: var(--navy); }
+  .faq-question .faq-toggle { font-size: 1.3rem; color: var(--gold-deep); transition: transform 0.25s; flex-shrink: 0; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  .faq-answer-inner { padding: 0 1.5rem 1.2rem; font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+  .faq-item.open .faq-answer { max-height: 300px; }
+
+  /* MOBILE STICKY CTA */
+  .mobile-cta-bar { display: none; }
+
+
   .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; background: #25D366; color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; text-decoration: none; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: transform 0.2s; animation: pulse-wa 3s ease-in-out infinite; }
   .wa-float:hover { transform: scale(1.1); }
   @keyframes pulse-wa { 0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); } 50% { box-shadow: 0 6px 36px rgba(37,211,102,0.65); } }
@@ -167,7 +213,7 @@
   footer a:hover { color: var(--gold); }
   .footer-social { display: flex; gap: 0.8rem; }
   .social-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
-  .social-btn:hover { border-color: var(--gold); background: rgba(245,197,24,0.12); }
+  .social-btn:hover { border-color: var(--gold); background: rgba(240,180,41,0.12); }
 
   /* ANIMATIONS */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -188,26 +234,52 @@
     footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 2rem 1.5rem; }
     .promise { padding: 4rem 1.5rem; }
     .form-row { grid-template-columns: 1fr; }
+    .stats { padding: 2.5rem 1.5rem; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem 1rem; }
+    .leadership { padding: 3rem 1.5rem; }
+    .leadership-card { grid-template-columns: 1fr; text-align: center; padding: 2rem; gap: 1.2rem; }
+    .leadership-badge { margin: 0 auto; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    body { padding-bottom: 70px; }
+    .mobile-cta-bar {
+      display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 199;
+      background: var(--navy); padding: 0.8rem 1.2rem; gap: 0.8rem;
+      box-shadow: 0 -4px 20px rgba(14,82,89,0.25);
+    }
+    .mobile-cta-bar a {
+      flex: 1; text-align: center; padding: 0.75rem; border-radius: 0.6rem;
+      font-size: 0.85rem; font-weight: 600; text-decoration: none;
+    }
+    .mobile-cta-bar .mcb-call { background: rgba(255,255,255,0.12); color: var(--white); }
+    .mobile-cta-bar .mcb-book { background: var(--gold); color: var(--navy); }
   }
   @media (max-width: 560px) {
     .services-grid, .steps { grid-template-columns: 1fr; }
     .hero-right { height: 260px; }
     h1 { font-size: 2.2rem; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
   }
 </style>
 </head>
 <body>
+
+<!-- Mobile Sticky CTA -->
+<div class="mobile-cta-bar">
+  <a href="tel:0707020204" class="mcb-call">📞 Call</a>
+  <a href="#contact" class="mcb-book">Book Now</a>
+</div>
 
 <!-- WhatsApp Float -->
 <a class="wa-float" href="https://wa.me/94707020204" target="_blank" title="Chat on WhatsApp">💬</a>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo"><img src="logo.png" alt="AlphaKleen" style="height:32px;width:auto;"> Alpha<span style="color:var(--gold-deep);">Kleen</span></div>
+  <div class="nav-logo"><img src="logo.png" alt="" style="height:32px;width:auto;"> Alpha<span style="color:var(--gold-deep);">Kleen</span></div>
   <ul>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#how">How It Works</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact" class="nav-cta">Book Now</a></li>
   </ul>
 </nav>
@@ -217,13 +289,13 @@
   <div class="hero-left">
     <div class="hero-eyebrow">✦ Sri Lanka's Trusted Cleaning Service</div>
     <h1>Reliable Cleaning Staff <span class="gold"><em>You Can Trust.</em></span></h1>
-    <p class="hero-sub">Trained, background-checked, and dependable cleaning staff to keep your home or apartment spotless - every single visit.</p>
+    <p class="hero-sub">Trained, trusted, and dependable cleaning staff to keep your home or apartment spotless - every single visit.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-gold">Book a Clean →</a>
       <a href="tel:0707020204" class="btn-outline">📞 070 70 20 20 4</a>
     </div>
     <div class="trust-bar">
-      <div class="trust-item"><span class="ti">✓</span><span>Background Verified</span></div>
+      <div class="trust-item"><span class="ti">✓</span><span>Trained & Trusted</span></div>
       <div class="trust-item"><span class="ti">✓</span><span>Hotel-Trained Supervisors</span></div>
       <div class="trust-item"><span class="ti">✓</span><span>Homes & Offices</span></div>
     </div>
@@ -237,7 +309,7 @@
         <div class="hmc-sub">Hotel-level discipline applied to your home. Every room, every detail.</div>
       </div>
       <div class="feature-pills">
-        <div class="pill"><div class="pill-dot"></div><span>🛡️ Background Verified Staff</span></div>
+        <div class="pill"><div class="pill-dot"></div><span>🛡️ Trained & Trusted Staff</span></div>
         <div class="pill"><div class="pill-dot"></div><span>⏰ Punctual Every Visit</span></div>
         <div class="pill"><div class="pill-dot"></div><span>✅ Satisfaction Guaranteed</span></div>
       </div>
@@ -253,8 +325,8 @@
   <div class="why-grid">
     <div class="why-card">
       <div class="why-icon">🛡️</div>
-      <h3>Background Verified Staff</h3>
-      <p>Every member of our team is vetted before entering your home - for your complete peace of mind.</p>
+      <h3>Trained & Trusted Staff</h3>
+      <p>Every member of our team is carefully selected and trained before entering your home - for your complete peace of mind.</p>
     </div>
     <div class="why-card">
       <div class="why-icon">👥</div>
@@ -270,6 +342,18 @@
       <div class="why-icon">🏠</div>
       <h3>Suitable for Homes & Offices</h3>
       <p>From apartments to houses to office spaces - our service is tailored to your specific needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="leadership">
+  <div class="leadership-card">
+    <div class="leadership-badge">🏆</div>
+    <div class="leadership-text">
+      <div class="section-label">Led By Real Hotel Experience</div>
+      <h3>Backed by 30+ years of 5-star hotel housekeeping experience.</h3>
+      <p>AlphaKleen is guided by a director with over three decades of housekeeping experience at 5-star hotels. That same discipline, structure, and attention to detail is what shapes how our team trains, supervises, and cleans every home we visit.</p>
     </div>
   </div>
 </section>
@@ -301,6 +385,28 @@
       <h3>Move-In / Move-Out</h3>
       <p>Comprehensive cleaning for vacant properties. Ideal for tenants, landlords, and property managers.</p>
       <div class="service-price">Contact for Quote →</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">Trained</div>
+      <div class="stat-label">& Trusted Staff</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">30+</div>
+      <div class="stat-label">Years 5-Star Hotel Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24h</div>
+      <div class="stat-label">Re-Clean Guarantee</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Colombo</div>
+      <div class="stat-label">& Surrounding Areas</div>
     </div>
   </div>
 </section>
@@ -341,8 +447,85 @@
   <div class="promise-badges">
     <div class="badge">✓ Satisfaction Guarantee</div>
     <div class="badge">✓ Supervised Every Visit</div>
-    <div class="badge">✓ Background Verified Team</div>
+    <div class="badge">✓ Trained & Trusted Team</div>
     <div class="badge">✓ Flexible Scheduling</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-label">Customer Feedback</div>
+  <h2>What our clients <em>are saying.</em></h2>
+  <!-- Real customer reviews -->
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Great service from start to finish. The team was punctual, friendly, and paid attention to the small details that really make a difference. Everything was left spotless, and the whole process was easy and stress-free. Would definitely recommend to anyone looking for reliable and thorough cleaning."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">V</div>
+        <div>
+          <div class="testimonial-name">Vinuki Boyagoda</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Professional and reliable cleaning service. They provide different types of cleaning and handled my house cleaning very well. The team is punctual, easy to communicate with, and does a neat job. Would highly recommend."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">C</div>
+        <div>
+          <div class="testimonial-name">Chidathma Wijekoon</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Very punctual and friendly team. They paid attention to every little detail, even cleaning areas I usually forget. I'll definitely book them again."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">J</div>
+        <div>
+          <div class="testimonial-name">Jananga Rajapaksha</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"The bathroom and kitchen were sparkling after the deep clean. The staff was respectful and very careful with the furniture."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">L</div>
+        <div>
+          <div class="testimonial-name">Lukshan Hettiarachchi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-label">Questions</div>
+  <h2>Frequently asked <em>questions.</em></h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question">Do I need to provide cleaning supplies or equipment?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">No - our team brings all necessary cleaning supplies and equipment. If you prefer us to use specific products you already own, just mention it in the booking notes.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How is your staff trained and supervised?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">Every team member is carefully selected and trained to hotel housekeeping standards, and works under close supervision on every visit.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What areas do you currently service?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">We currently cover Colombo and the surrounding areas. If you're just outside this range, WhatsApp us and we'll confirm whether we can accommodate you.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I reschedule or cancel a booking?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes - just reach out via WhatsApp or call as early as possible and we'll help you find a new time that works.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What if I'm not happy with the clean?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">Let us know within 24 hours and we'll send the team back to make it right, at no extra charge - that's our satisfaction guarantee.</div></div>
+    </div>
   </div>
 </section>
 
@@ -440,7 +623,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="AlphaKleen" style="height:26px;width:auto;"> Alpha<span style="color:var(--gold);">Kleen</span></div>
+  <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="" style="height:26px;width:auto;"> Alpha<span style="color:var(--gold);">Kleen</span></div>
   <div>© 2026 AlphaKleen. Sri Lanka's Trusted Cleaning Service.</div>
   <div>
     <a href="mailto:alphakleen.info@gmail.com">alphakleen.info@gmail.com</a> &nbsp;|&nbsp;
@@ -462,10 +645,19 @@
       if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'translateY(0)'; }
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.why-card, .service-card, .step, .contact-item').forEach(el => {
+  document.querySelectorAll('.why-card, .service-card, .step, .contact-item, .testimonial-card, .faq-item, .stat-item, .leadership-card').forEach(el => {
     el.style.opacity = 0; el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
+  });
+
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
   });
 
   document.getElementById('booking-form').addEventListener('submit', (e) => {
