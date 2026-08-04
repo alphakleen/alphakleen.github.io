@@ -298,7 +298,9 @@
   @keyframes pulse-wa { 0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); } 50% { box-shadow: 0 6px 36px rgba(37,211,102,0.65); } }
 
   /* FOOTER */
-  footer { background: var(--navy-deep); color: rgba(255,255,255,0.35); padding: 2.5rem 5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
+  footer { background: var(--navy-deep); color: rgba(255,255,255,0.35); padding: 2.5rem 5rem; display: flex; flex-direction: column; gap: 1.2rem; font-size: 0.82rem; }
+  .footer-main { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+  .footer-privacy { text-align: center; font-size: 0.72rem; color: rgba(255,255,255,0.25); padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,0.08); }
   .footer-logo { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: var(--white); }
   .footer-logo .star { color: var(--gold); }
   footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
@@ -325,6 +327,7 @@
     .steps { grid-template-columns: 1fr 1fr; }
     .step:not(:last-child)::after { display: none; }
     footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 2rem 1.5rem; }
+    .footer-main { flex-direction: column; gap: 0.8rem; }
     .promise { padding: 4rem 1.5rem; }
     .form-row { grid-template-columns: 1fr; }
     .stats { padding: 2.5rem 1.5rem; }
@@ -715,20 +718,23 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="AlphaKleen cleaning services logo" style="height:26px;width:auto;">Alpha<span style="color:var(--gold);">Kleen</span></div>
-  <div>© 2026 AlphaKleen. Sri Lanka's Trusted Cleaning Service.</div>
-  <div>
-    <a href="mailto:alphakleen.info@gmail.com">alphakleen.info@gmail.com</a> &nbsp;|&nbsp;
-    <a href="tel:0707020204">070 70 20 20 4</a>
+  <div class="footer-main">
+    <div class="footer-logo" style="display:flex;align-items:center;gap:0.4rem;"><img src="logo.png" alt="AlphaKleen cleaning services logo" style="height:26px;width:auto;">Alpha<span style="color:var(--gold);">Kleen</span></div>
+    <div>© 2026 AlphaKleen. Sri Lanka's Trusted Cleaning Service.</div>
+    <div>
+      <a href="mailto:alphakleen.info@gmail.com">alphakleen.info@gmail.com</a> &nbsp;|&nbsp;
+      <a href="tel:0707020204">070 70 20 20 4</a>
+    </div>
+    <div class="footer-social">
+      <a class="social-btn" href="https://www.instagram.com/alphakleen_/" target="_blank" title="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#fff" stroke-opacity="0.85" stroke-width="2"/><circle cx="12" cy="12" r="4.2" stroke="#fff" stroke-opacity="0.85" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff" fill-opacity="0.85"/></svg>
+      </a>
+      <a class="social-btn" href="https://web.facebook.com/profile.php?id=61578281924478" target="_blank" title="Facebook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.02H7.9v-2.92h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.92h-2.34V22C18.34 21.24 22 17.08 22 12.06Z" fill="#fff" fill-opacity="0.85"/></svg>
+      </a>
+    </div>
   </div>
-  <div class="footer-social">
-    <a class="social-btn" href="https://www.instagram.com/alphakleen_/" target="_blank" title="Instagram">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#fff" stroke-opacity="0.85" stroke-width="2"/><circle cx="12" cy="12" r="4.2" stroke="#fff" stroke-opacity="0.85" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff" fill-opacity="0.85"/></svg>
-    </a>
-    <a class="social-btn" href="https://web.facebook.com/profile.php?id=61578281924478" target="_blank" title="Facebook">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.02H7.9v-2.92h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.92h-2.34V22C18.34 21.24 22 17.08 22 12.06Z" fill="#fff" fill-opacity="0.85"/></svg>
-    </a>
-  </div>
+  <div class="footer-privacy">This site uses cookies and Google Analytics to understand visitor traffic and improve our service.</div>
 </footer>
 
 <script>
