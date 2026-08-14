@@ -13,24 +13,24 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka</title>
-<meta name="description" content="AlphaKleen offers reliable, hotel-standard cleaning services in Colombo and surrounding areas. Standard cleaning, deep cleaning, and move-in/move-out cleaning for homes and offices. Trained, trusted staff. Book cleaning services near you today.">
-<meta name="keywords" content="cleaning services Colombo, cleaning services near me, house cleaning Colombo, deep cleaning service, home cleaning service, office cleaning Colombo, move out cleaning Sri Lanka">
+<title>AlphaKleen | Cleaning &amp; Facility Management Services in Colombo</title>
+<meta name="description" content="AlphaKleen provides hotel-standard cleaning and facility management services in Colombo - residential, commercial, industrial, and contract cleaning. Trained, trusted staff for homes, offices, hotels, and facilities.">
+<meta name="keywords" content="cleaning services Colombo, facility management Colombo, commercial cleaning Sri Lanka, industrial cleaning Colombo, office cleaning contract, hotel housekeeping outsourcing, house cleaning Colombo, deep cleaning service, cleaning services near me">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://alphakleen.lk/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka">
-<meta property="og:description" content="Reliable, hotel-standard cleaning services in Colombo and surrounding areas. Standard cleaning, deep cleaning, and move-in/move-out cleaning for homes and offices.">
+<meta property="og:title" content="AlphaKleen | Cleaning &amp; Facility Management Services in Colombo">
+<meta property="og:description" content="Hotel-standard cleaning and facility management for homes, offices, hotels, and industrial sites across Colombo.">
 <meta property="og:url" content="https://alphakleen.lk/">
 <meta property="og:image" content="https://alphakleen.lk/logo.png">
 <meta property="og:locale" content="en_LK">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AlphaKleen | Trusted Cleaning Services in Colombo, Sri Lanka">
-<meta name="twitter:description" content="Reliable, hotel-standard cleaning services in Colombo and surrounding areas.">
+<meta name="twitter:title" content="AlphaKleen | Cleaning &amp; Facility Management Services in Colombo">
+<meta name="twitter:description" content="Hotel-standard cleaning and facility management for homes, offices, hotels, and industrial sites.">
 <meta name="twitter:image" content="https://alphakleen.lk/logo.png">
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -42,7 +42,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HouseCleaningService",
+  "@type": "ProfessionalService",
   "name": "AlphaKleen",
   "image": "https://alphakleen.lk/logo.png",
   "url": "https://alphakleen.lk/",
@@ -190,7 +190,13 @@
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
   .why-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 1.2rem; padding: 2rem; transition: background 0.2s, border-color 0.2s; }
   .why-card:hover { background: rgba(240,180,41,0.05); border-color: rgba(240,180,41,0.18); }
-  .why-icon { width: 44px; height: 44px; border-radius: 0.75rem; background: rgba(240,180,41,0.12); border: 1px solid rgba(240,180,41,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1.2rem; }
+  .inline-ic { width: 1em; height: 1em; vertical-align: -0.15em; margin-right: 0.4em; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .icon-svg { stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .why-icon .icon-svg, .service-icon .icon-svg { width: 20px; height: 20px; color: var(--navy); }
+  .contact-item-icon .icon-svg { width: 18px; height: 18px; color: var(--white); }
+  .leadership-badge .icon-svg { width: 26px; height: 26px; color: var(--gold); }
+  .hmc-icon .icon-svg { width: 22px; height: 22px; color: var(--white); }
+  .why-icon { width: 44px; height: 44px; border-radius: 0.75rem; background: rgba(14,82,89,0.06); border: 1px solid rgba(14,82,89,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1.2rem; }
   .why-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--white); margin-bottom: 0.5rem; }
   .why-card p { font-size: 0.83rem; color: rgba(255,255,255,0.4); line-height: 1.65; }
 
@@ -209,13 +215,25 @@
   .leadership-text p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 620px; }
 
   /* SERVICES */
+  /* CATEGORY GRID */
+  .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+  .category-card { background: var(--white); border-radius: 1.2rem; padding: 1.6rem; border: 1px solid var(--border); transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s; display: flex; flex-direction: column; }
+  .category-card:hover { box-shadow: 0 16px 48px rgba(14,82,89,0.08); transform: translateY(-4px); border-color: rgba(240,180,41,0.35); }
+  .category-card .service-icon { width: 42px; height: 42px; margin-bottom: 1rem; }
+  .category-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--navy); margin-bottom: 0.7rem; font-family: 'DM Sans', sans-serif; }
+  .category-card ul { list-style: none; margin-bottom: 0; }
+  .category-card li { font-size: 0.76rem; color: var(--muted); line-height: 1.85; padding-left: 0.9rem; position: relative; }
+  .category-card li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 4px; height: 4px; border-radius: 50%; background: var(--navy-mid); opacity: 0.5; }
+
   .services { background: var(--off-white); }
   .services-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 3rem; }
   .services-desc { font-size: 0.95rem; color: var(--muted); line-height: 1.75; }
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
   .service-card { background: var(--white); border-radius: 1.2rem; padding: 2rem; border: 1px solid var(--border); transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s; }
   .service-card:hover { box-shadow: 0 16px 48px rgba(14,82,89,0.08); transform: translateY(-4px); border-color: rgba(240,180,41,0.35); }
-  .service-icon { width: 48px; height: 48px; background: var(--gold-light); border: 1px solid rgba(240,180,41,0.2); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; }
+  .service-icon { width: 48px; height: 48px; background: var(--off-white); border: 1px solid var(--border); border-radius: 0.8rem; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1.2rem; }
+  .services-footnote { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 2.5rem; }
+  .services-footnote a { color: var(--navy); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
   .service-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--navy); }
   .service-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
   .service-price { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--gold-deep); font-weight: 600; }
@@ -324,6 +342,7 @@
     section { padding: 4rem 1.5rem; }
     .why-grid, .services-header, .contact-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
+    .category-grid { grid-template-columns: 1fr 1fr; }
     .steps { grid-template-columns: 1fr 1fr; }
     .step:not(:last-child)::after { display: none; }
     footer { flex-direction: column; gap: 0.8rem; text-align: center; padding: 2rem 1.5rem; }
@@ -351,6 +370,7 @@
   }
   @media (max-width: 560px) {
     .services-grid, .steps { grid-template-columns: 1fr; }
+    .category-grid { grid-template-columns: 1fr; }
     h1 { font-size: 2.2rem; }
     .stats-grid { grid-template-columns: 1fr 1fr; }
   }
@@ -360,12 +380,12 @@
 
 <!-- Mobile Sticky CTA -->
 <div class="mobile-cta-bar">
-  <a href="tel:0707020204" class="mcb-call">📞 Call</a>
+  <a href="tel:0707020204" class="mcb-call"><svg class="inline-ic" viewBox="0 0 24 24"><path d="M5 4 H8 L10 8 L7.5 10 C8.7 13 11 15.3 14 16.5 L16 14 L20 16 V19 C20 20.1 19.1 21 18 20.9 C11 20.2 4.8 14 4.1 7 C4 5.9 4.9 4 5 4 Z"/></svg>Call</a>
   <a href="#contact" class="mcb-book">Book Now</a>
 </div>
 
 <!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/94707020204" target="_blank" title="Chat on WhatsApp">💬</a>
+<a class="wa-float" href="https://wa.me/94707020204" target="_blank" title="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:26px;height:26px;"><path d="M4 19 L5.2 15.2 C4.4 13.9 4 12.5 4 11 C4 6.6 7.8 3 12.5 3 C17.2 3 21 6.6 21 11 C21 15.4 17.2 19 12.5 19 C11 19 9.6 18.6 8.4 17.9 Z"/></svg></a>
 
 <!-- NAV -->
 <nav>
@@ -382,31 +402,31 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">✦ Sri Lanka's Trusted Cleaning Service</div>
-    <h1>Reliable Cleaning Services in Colombo <span class="gold"><em>You Can Trust.</em></span></h1>
-    <p class="hero-sub">Trained, trusted, and dependable cleaning staff to keep your home or apartment spotless - every single visit.</p>
+    <div class="hero-eyebrow">✦ Cleaning &amp; Facility Management</div>
+    <h1>Professional Cleaning &amp; Facility Management <span class="gold"><em>in Colombo.</em></span></h1>
+    <p class="hero-sub">Hotel-standard cleaning and facility support for homes, offices, hotels, and industrial sites - trained teams, structured checklists, dependable results.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-gold">Book a Clean →</a>
-      <a href="tel:0707020204" class="btn-outline">📞 070 70 20 20 4</a>
+      <a href="tel:0707020204" class="btn-outline"><svg class="inline-ic" viewBox="0 0 24 24"><path d="M5 4 H8 L10 8 L7.5 10 C8.7 13 11 15.3 14 16.5 L16 14 L20 16 V19 C20 20.1 19.1 21 18 20.9 C11 20.2 4.8 14 4.1 7 C4 5.9 4.9 4 5 4 Z"/></svg>070 70 20 20 4</a>
     </div>
     <div class="trust-bar">
       <div class="trust-item"><span class="ti">✓</span><span>Trained & Trusted</span></div>
       <div class="trust-item"><span class="ti">✓</span><span>Hotel-Trained Supervisors</span></div>
-      <div class="trust-item"><span class="ti">✓</span><span>Homes & Offices</span></div>
+      <div class="trust-item"><span class="ti">✓</span><span>Homes, Business &amp; Industry</span></div>
     </div>
   </div>
   <div class="hero-right">
     <div class="hero-visual">
       <div class="hero-main-card">
         <div class="hero-main-card-badge">✦ New Booking</div>
-        <div class="hmc-icon">🏠</div>
+        <div class="hmc-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 11 L12 4 L20 11"/><path d="M6 10 V20 H18 V10"/><path d="M10 20 V14 H14 V20"/></svg></div>
         <div class="hmc-title">Deep Home Clean</div>
         <div class="hmc-sub">Hotel-level discipline applied to your home. Every room, every detail.</div>
       </div>
       <div class="feature-pills">
-        <div class="pill"><div class="pill-dot"></div><span>🛡️ Trained & Trusted Staff</span></div>
-        <div class="pill"><div class="pill-dot"></div><span>⏰ Punctual Every Visit</span></div>
-        <div class="pill"><div class="pill-dot"></div><span>✅ Satisfaction Guaranteed</span></div>
+        <div class="pill"><div class="pill-dot"></div><span><svg class="inline-ic" viewBox="0 0 24 24"><path d="M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z"/><path d="M8.5 12 L11 14.5 L16 9"/></svg>Trained & Trusted Staff</span></div>
+        <div class="pill"><div class="pill-dot"></div><span><svg class="inline-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L16 14.5"/></svg>Punctual Every Visit</span></div>
+        <div class="pill"><div class="pill-dot"></div><span><svg class="inline-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5 L10.8 15.3 L16 9.5"/></svg>Satisfaction Guaranteed</span></div>
       </div>
     </div>
   </div>
@@ -416,27 +436,27 @@
 <section class="why" id="why">
   <div class="section-label">Why AlphaKleen</div>
   <h2>Not just cleaners - <em>a system.</em></h2>
-  <p class="why-intro">We bring hotel housekeeping discipline to residential cleaning. Supervised teams, structured checklists, and zero shortcuts.</p>
+  <p class="why-intro">We bring hotel housekeeping discipline to every job - homes, offices, and facilities alike. Supervised teams, structured checklists, and zero shortcuts.</p>
   <div class="why-grid">
     <div class="why-card">
-      <div class="why-icon">🛡️</div>
+      <div class="why-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z"/><path d="M8.5 12 L11 14.5 L16 9"/></svg></div>
       <h3>Trained & Trusted Staff</h3>
       <p>Every member of our team is carefully selected and trained before entering your home - for your complete peace of mind.</p>
     </div>
     <div class="why-card">
-      <div class="why-icon">👥</div>
+      <div class="why-icon"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20 C3 15.5 5.7 13 9 13 C12.3 13 15 15.5 15 20"/><circle cx="17" cy="9" r="2.3"/><path d="M15.5 13.3 C18.2 13.6 20.5 15.8 21 20"/></svg></div>
       <h3>Trained & Experienced Cleaners</h3>
       <p>Our cleaners are trained to hotel housekeeping standards - professional, efficient, and detail-oriented.</p>
     </div>
     <div class="why-card">
-      <div class="why-icon">🤝</div>
+      <div class="why-icon"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L16 14.5"/></svg></div>
       <h3>Dependable & Punctual</h3>
       <p>We show up when we say we will. Consistent reliability is the foundation of everything we do.</p>
     </div>
     <div class="why-card">
-      <div class="why-icon">🏠</div>
-      <h3>Suitable for Homes & Offices</h3>
-      <p>From apartments to houses to office spaces - our service is tailored to your specific needs.</p>
+      <div class="why-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 11 L12 4 L20 11"/><path d="M6 10 V20 H18 V10"/><path d="M10 20 V14 H14 V20"/></svg></div>
+      <h3>Homes, Business &amp; Facilities</h3>
+      <p>From apartments to offices to full facility contracts - our service scales to your specific needs.</p>
     </div>
   </div>
 </section>
@@ -444,7 +464,7 @@
 <!-- LEADERSHIP -->
 <section class="leadership">
   <div class="leadership-card">
-    <div class="leadership-badge">🏆</div>
+    <div class="leadership-badge"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2 L14.5 9.5 L22 11 L14.5 12.5 L12 20 L9.5 12.5 L2 11 L9.5 9.5 Z"/></svg></div>
     <div class="leadership-text">
       <div class="section-label">Led By Real Hotel Experience</div>
       <h3>Backed by 30+ years of 5-star hotel housekeeping experience.</h3>
@@ -458,30 +478,49 @@
   <div class="services-header">
     <div>
       <div class="section-label">Our Services</div>
-      <h2>Residential cleaning <em>done right.</em></h2>
+      <h2>Cleaning, <em>done properly.</em></h2>
     </div>
-    <p class="services-desc">Looking for cleaning services near you? Whether it's a routine refresh or a thorough deep clean, AlphaKleen adapts to your home in Colombo - with the same high standards every time.</p>
+    <p class="services-desc">Whether it's a routine home refresh or a small office contract, AlphaKleen brings the same hotel-trained discipline to every job.</p>
   </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">✨</div>
-      <h3>Standard Clean</h3>
-      <p>Regular maintenance cleaning - living areas, bedrooms, kitchen, bathrooms. Perfect for weekly or bi-weekly bookings.</p>
-      <div class="service-price">Contact for Quote →</div>
+  <div class="category-grid">
+    <div class="category-card">
+      <div class="service-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 11 L12 4 L20 11"/><path d="M6 10 V20 H18 V10"/><path d="M10 20 V14 H14 V20"/></svg></div>
+      <h3>Residential Cleaning</h3>
+      <ul>
+        <li>Regular house &amp; apartment cleaning</li>
+        <li>Deep &amp; post-renovation cleaning</li>
+        <li>Move-in / move-out cleaning</li>
+      </ul>
     </div>
-    <div class="service-card">
-      <div class="service-icon">🔍</div>
-      <h3>Deep Clean</h3>
-      <p>Top-to-bottom cleaning covering often-missed areas - inside cupboards, behind appliances, and detailed surfaces.</p>
-      <div class="service-price">Contact for Quote →</div>
+    <div class="category-card">
+      <div class="service-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 8 H21 V19 C21 19.6 20.6 20 20 20 H4 C3.4 20 3 19.6 3 19 V8 Z"/><path d="M8 8 V6 C8 4.9 8.9 4 10 4 H14 C15.1 4 16 4.9 16 6 V8"/><path d="M3 13 H21"/></svg></div>
+      <h3>Small Office &amp; Retail</h3>
+      <ul>
+        <li>Office &amp; daily janitorial cleaning</li>
+        <li>Retail &amp; restaurant cleaning</li>
+        <li>Apartment common areas</li>
+      </ul>
     </div>
-    <div class="service-card">
-      <div class="service-icon">📦</div>
-      <h3>Move-In / Move-Out</h3>
-      <p>Comprehensive cleaning for vacant properties. Ideal for tenants, landlords, and property managers.</p>
-      <div class="service-price">Contact for Quote →</div>
+    <div class="category-card">
+      <div class="service-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M5 12 V9 C5 7.9 5.9 7 7 7 H17 C18.1 7 19 7.9 19 9 V12"/><path d="M3 12 H21 V17 C21 18.1 20.1 19 19 19 H5 C3.9 19 3 18.1 3 17 Z"/></svg></div>
+      <h3>Sofa, Carpet &amp; Upholstery</h3>
+      <ul>
+        <li>Sofa &amp; mattress cleaning</li>
+        <li>Carpet &amp; curtain cleaning</li>
+        <li>Tile &amp; grout cleaning</li>
+      </ul>
+    </div>
+    <div class="category-card">
+      <div class="service-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 8 H10 L9 20 C8.9 20.6 8.4 21 7.8 21 H6.2 C5.6 21 5.1 20.6 5 20 Z"/><path d="M6 3 V7 M9 4 L8 7 M4 4 L5 7"/></svg></div>
+      <h3>Specialized Cleaning</h3>
+      <ul>
+        <li>Pressure washing &amp; driveways</li>
+        <li>Window &amp; glass cleaning</li>
+        <li>Disinfection &amp; sanitization</li>
+      </ul>
     </div>
   </div>
+  <p class="services-footnote">Managing a larger property, office, or facility? We also take on bigger projects and ongoing contracts - <a href="#contact">get in touch</a> to discuss.</p>
 </section>
 
 <!-- STATS -->
@@ -621,6 +660,14 @@
       <div class="faq-question">What if I'm not happy with the clean?<span class="faq-toggle">+</span></div>
       <div class="faq-answer"><div class="faq-answer-inner">Let us know within 24 hours and we'll send the team back to make it right, at no extra charge - that's our satisfaction guarantee.</div></div>
     </div>
+    <div class="faq-item">
+      <div class="faq-question">Do you offer ongoing contracts for offices or facilities?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes - monthly and long-term contracts for offices, hotels, apartment complexes, and industrial sites are one of our core services. Use the "Request a Proposal" form to share your requirements and we'll get back to you with a plan.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can you handle government tenders or large facility contracts?<span class="faq-toggle">+</span></div>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes - facility management and contract cleaning are part of our registered scope of business. Reach out through our business inquiry form with your tender or facility requirements and we'll follow up directly.</div></div>
+    </div>
   </div>
 </section>
 
@@ -632,28 +679,28 @@
       <h2>Ready for a <em>cleaner home?</em></h2>
       <p>Book your first clean today or reach out with any questions. We'll create the right package for your home and schedule.</p>
       <div class="contact-item">
-        <div class="contact-item-icon">📱</div>
+        <div class="contact-item-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M5 4 H8 L10 8 L7.5 10 C8.7 13 11 15.3 14 16.5 L16 14 L20 16 V19 C20 20.1 19.1 21 18 20.9 C11 20.2 4.8 14 4.1 7 C4 5.9 4.9 4 5 4 Z"/></svg></div>
         <div class="contact-item-text">
           <strong>WhatsApp / Call</strong>
           <a href="tel:0707020204">070 70 20 20 4</a>
         </div>
       </div>
       <div class="contact-item">
-        <div class="contact-item-icon">✉️</div>
+        <div class="contact-item-icon"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6 L12 13 L21 6"/></svg></div>
         <div class="contact-item-text">
           <strong>Email</strong>
           <a href="mailto:alphakleen.info@gmail.com">alphakleen.info@gmail.com</a>
         </div>
       </div>
       <div class="contact-item">
-        <div class="contact-item-icon">📍</div>
+        <div class="contact-item-icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 22 C12 22 19 14.5 19 9.5 C19 5.4 15.9 2 12 2 C8.1 2 5 5.4 5 9.5 C5 14.5 12 22 12 22 Z"/><circle cx="12" cy="9.5" r="2.6"/></svg></div>
         <div class="contact-item-text">
           <strong>Service Area</strong>
           Colombo & surrounding areas, Sri Lanka
         </div>
       </div>
       <div class="contact-item">
-        <div class="contact-item-icon">📲</div>
+        <div class="contact-item-icon"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8 L15.8 6.2 M8.2 13.2 L15.8 17.8"/></svg></div>
         <div class="contact-item-text">
           <strong>Follow Us</strong>
           <div style="display:flex;gap:0.6rem;margin-top:0.4rem;flex-wrap:wrap;">
@@ -743,7 +790,7 @@
       if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'translateY(0)'; }
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.why-card, .service-card, .step, .contact-item, .testimonial-card, .faq-item, .stat-item, .leadership-card').forEach(el => {
+  document.querySelectorAll('.why-card, .service-card, .category-card, .step, .contact-item, .testimonial-card, .faq-item, .stat-item, .leadership-card').forEach(el => {
     el.style.opacity = 0; el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
